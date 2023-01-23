@@ -1,0 +1,58 @@
+.container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20%;
+}
+ 
+ 
+ 
+ .btn{
+
+
+    display: flex;
+
+    font-size:20px ;
+
+    color: aliceblue;
+
+    background-color:red;
+    width: 120px;
+    height: 40px;
+    align-items: center;
+    
+   justify-items: center;
+   cursor: pointer;
+   justify-content: center;
+  
+   transition: all 0.5s;
+   z-index: 1;
+  position: relative;
+
+
+
+}
+
+
+ .btn::before{
+
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+    transition: all 0.8s;
+ }
+    
+  .btn:hover::before{
+    transform: scaleX(1);
+  }
+
+  .btn:hover{
+    color:white ;
+  }
